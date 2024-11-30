@@ -1,26 +1,36 @@
-|<html>
+<html>
     <head>
         <link href="style.css" rel="stylesheet" type="text/css" />  
-        <div class="ex1"
-        margin: auto;
-        width: 66%;>
-      </div>
-           <style>
+        <style>
             body{ font-family: "girassolregular"}
             a{font-size: medium;}
             body{margin-left: 5%;margin-right: 5%;}
             p {font-size:xx-large;}
-            #tabla{font-size: x-large;}
+            /*#tabla{font-size: x-large;}
             .miCaja {
-      width: 700px;
-      padding: 20px;
-      margin: 30px;
-      box-sizing: border-box;
-    }
-            /*Este css es para aplicar hover al div declarado abajo*/
+                width: 700px;
+                padding: 20px;
+                margin: 30px;
+                box-sizing: border-box;
+            }
+            /*Este css es para aplicar hover al div declarado abajo
             .box:hover { 
                 transform: scale(1.05);
-                width: 200px;
+                width: 200px;}*/
+            div > img {
+                border-radius: 8px;
+                width: 100%
+                height: auto;
+                box-shadow: 0px 0px 30px #000
+            }
+            div {
+                display: grid;
+                grid-template-columns;
+                repeat (
+                    auto-fit;
+                    minmax(150px, 1fr)
+                );
+                gap: 32px
             }
             </style>
         <p align="center"> <img src="vidadelobo.png" alt="Logotipo"
@@ -39,31 +49,20 @@
     </head>
     <body>
 <p>
-    <table align="center" id="tabla2">
-        <tr>
-            <td>
-<div class="Box"> <a href="libros.html" style="color: black;"><img  src="libros.jpg" alt="libros"></a> </p>
-<p> <font size="5" align="center"> TERTURIA LITERARIA </font></p> </div> </td>
-<td>
-    <div class="Box"> <a href="Libros.html" style="color: black;"><img  src="navidad.jpg" alt="xmas"></a> </p>
-    <p> <font size="5" align="center"> EVENTO NAVIDAD </font></p> </div> </td>
-    <td>
-        <div class="Box"> <a href="poemas.html" style="color: black;"><img  src="poema.jpg" alt="poema" sizes="5"></a> </p>
-        <p> <font size="5" align="center"> POEMAS SECU </font></p> </div> </td>
-</tr>
-</br>
-<tr>
-    <td>
-<div class="Box"> <a href="libros.html" style="color: black;"><img  src="tips.png" alt="libros"></a> </p>
-<p> <font size="5" align="center"> TIPS ESTUDIO </font></p> </div> </td>
-<td>
-<div class="Box"> <a href="libros.html" style="color: black;"><img  src="inte.jpg" alt="xmas"></a> </p>
-<p> <font size="5" align="center">  ACERTIJOS </font></p> </div> </td>
-<td>
-<div class="Box"> <a href="reportaje.html" style="color: black;"><img  src="repor.jpg" alt="reportaje" sizes="5"></a> </p>
-<p> <font size="5" align="center">REPORTAJE SEMANAL</font></p> </div> </td>
-</tr>
-</table>
+<div class="ajuste">
+    <a href="libros.html" style="color: black;"><img  src="libros.jpg" alt="libros"></a>
+    <font size="5" align="center"> TERTURIA LITERARIA</font>
+    <a href="Libros.html" style="color: black;"><img  src="navidad.jpg" alt="xmas"></a>
+    <font size="5" align="center"> EVENTO NAVIDAD</font>
+    <a href="poemas.html" style="color: black;"><img  src="poema.jpg" alt="poema" sizes="5"></a>
+    <font size="5" align="center"> POEMAS SECU </font>
+    <a href="libros.html" style="color: black;"><img  src="tips.png" alt="libros"></a>
+    <font size="5" align="center"> TIPS ESTUDIO </font>
+    <a href="libros.html" style="color: black;"><img  src="inte.jpg" alt="xmas"></a>
+    <font size="5" align="center">  ACERTIJOS </font>
+    <a href="reportaje.html" style="color: black;"><img  src="repor.jpg" alt="reportaje" sizes="5"></a>
+    <font size="5" align="center">REPORTAJE SEMANAL</font>
+</div>
     <!--Separe la imagen de la tabla usando un div-->
 </body>
 </html>
