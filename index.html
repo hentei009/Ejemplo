@@ -1,82 +1,40 @@
 <html>
     <head>
-        <link href="style.css" rel="stylesheet" type="text/css" />  
-        <style>
-            body{ font-family: "girassolregular"}
-            a{font-size: medium;}
-            body{margin-left: 5%;margin-right: 5%;}
-            p {font-size:xx-large;}
-            .galeria {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr); /* Tres columnas de igual ancho */
-            gap: 25px; /* Espacio entre las columnas */
-        }
-        .objeto {
-            border-radius: 8px;
-            box-shadow: 0px 0px 10px #000;
-            text-align: center; /* Centra el texto debajo de la imagen */
-            transition: transform 0.3s ease; /* Añade una transición suave para el efecto hover */
-            background-color: white;
-            
-        }
-        .objeto:hover {
-            transform: scale(1.05); /* Aumenta ligeramente el tamaño del contenedor al hacer hover */
-        }
-        .objeto img {
-            width: 100%; /* Ajusta el ancho de las imágenes para que ocupen todo el espacio del contenedor */
-            height: auto;
-            border-radius: 8px 8px 0 0; /* Aplica el borde redondeado solo a la parte superior de la imagen */
-        }
-
-        body {
-            margin: 0;
-            padding: 0;
-            /*overflow: hidden;*/
-            background: #797979; /* Puedes cambiar el color de fondo */
-        }
-
-        #snow {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            pointer-events: none;
-        }
-        .snowflake {
-            position: absolute;
-            top: 0;
-            background: white; /* Color de los copos de nieve */
-            border-radius: 50%;
-            pointer-events: none;
-            will-change: transform;
-            animation: snowfall linear infinite;
-        }
-
-        @keyframes snowfall {
-            0% {
-                transform: translateY(-100vh);
-            }
-            100% {
-                transform: translateY(100vh);
-            }
-        }
-            </style>
-        <p align="center"> <img src="vidadelobo.png" alt="Logotipo"
-            width="160"
-            height="120"> <table id="comen" align="right"> <tr><td><a href="gmail.com" style="color: rgb(255, 255, 255);"> <font size="4">COMENTARIOS</font></a></td></tr></table> </p>
-       <table id="tabla" align="center">
-        <tr> <b>
-        <td><a href="página-revista.html" style="color: black;"><font size="4">INICIO</font> </a></td>
-        <td><a href="articulos.html" style="color: black;"><font size="4">ARTICULOS</font></a> </td> 
-       <td><a href="origen.html" style="color: black;"><font size="4">ORIGEN</font> </a></td>
-       <td><a href="revistafisica.html" style="color: black;"><font size="4">COMPRA</font> </a></td>
-       <td><a href="comentarios.html" style="color: black;"><font size="4">COMUNIDAD</font> </a></td>
-       <td><a href="creditos.html" style="color: black;"><font size="4">CRÉDITOS</font> </a></td>
-        </tr> <br><br>
-    </table>
+        <link rel="stylesheet" href="snow.css">
+        <link rel="stylesheet" href="Galeria.css">
+        <link rel="stylesheet" href="body.css">
+        <title>Vida de Lobo</title>
     </head>
     <body>
+        <div class="container">
+            <header>
+                <div class="izq">
+                    <img src="vidadelobo.png" alt="Logotipo">
+                </div>
+                <h1>Vida de Lobo 3°A</h1>
+            </header>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">INICIO</a>
+                    </li>
+                    <li>
+                        <a href="#">ARTICULOS</a>
+                    </li>
+                    <li>
+                        <a href="#">ORIGEN</a>
+                    </li>
+                    <li>
+                        <a href="#">COMPRA</a>
+                    </li>
+                    <li>
+                        <a href="#">COMUNIDAD</a>
+                    </li>
+                    <li>
+                        <a href="#">CRÉDITOS</a>
+                    </li>
+                </ul>
+            </nav>
         <div id="snow"></div> <script src="snow.js"></script>
         <div class="galeria">
             <div class="objeto"><a href="libros.html" style="color: black;"><img  src="libros.jpg" alt="libros"></a>
@@ -92,6 +50,9 @@
                 <div class="objeto"><a href="reportaje.html" style="color: black;"><img  src="repor.jpg" alt="reportaje" sizes="5"></a>
                 <font size="5" align="center">REPORTAJE SEMANAL</font></div>
         </div>
-    <!--Separe la imagen de la tabla usando un div-->
-</body>
+    </div>
+    <footer>
+        nicolas 3ro a
+    </footer>
+    </body>
 </html>
