@@ -110,3 +110,38 @@ footer {
     border-radius: 10px 10px 0 0; /* Bordes redondeados en la parte superior */ 
     margin-top: 20px; /* Añade un margen superior para separar del div.galeria */
     }
+
+@media (max-width: 768px) { 
+    header { 
+        flex-direction: column;
+        align-items: center;
+        height: auto; 
+    }
+    header img {
+        max-height: 50px;
+    }
+    
+    h1
+    { font-size: 24px; }
+    
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    nav ul li {
+        margin-bottom: 10px;
+    }
+    
+    .galeria {
+        grid-template-columns: 1fr; /* Ajusta a una columna en pantallas pequeñas */ 
+    }
+    
+    .objeto {
+        max-width: 100%;
+    }
+    
+    footer {
+        font-size: 14px; padding: 10px;
+    }
+}
