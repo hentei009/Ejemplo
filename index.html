@@ -17,21 +17,25 @@
             .box:hover { 
                 transform: scale(1.05);
                 width: 200px;}*/
-            div > img {
-                border-radius: 8px;
-                width: 100%
-                height: auto;
-                box-shadow: 0px 0px 30px #000
-            }
-            div {
-                display: grid;
-                grid-template-columns;
-                repeat (
-                    auto-fit;
-                    minmax(150px, 1fr)
-                );
-                gap: 32px
-            }
+            .galeria {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* Tres columnas de igual ancho */
+            gap: 25px; /* Espacio entre las columnas */
+        }
+        .objeto {
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px #000;
+            text-align: center; /* Centra el texto debajo de la imagen */
+            transition: transform 0.3s ease; /* Añade una transición suave para el efecto hover */
+        }
+        .objeto:hover {
+            transform: scale(1.05); /* Aumenta ligeramente el tamaño del contenedor al hacer hover */
+        }
+        .objeto img {
+            width: 100%; /* Ajusta el ancho de las imágenes para que ocupen todo el espacio del contenedor */
+            height: auto;
+            border-radius: 8px 8px 0 0; /* Aplica el borde redondeado solo a la parte superior de la imagen */
+        }
             </style>
         <p align="center"> <img src="vidadelobo.png" alt="Logotipo"
             width="160"
@@ -49,20 +53,20 @@
     </head>
     <body>
 <p>
-<div class="ajuste">
-    <a href="libros.html" style="color: black;"><img  src="libros.jpg" alt="libros"></a>
-    <font size="5" align="center"> TERTURIA LITERARIA</font>
-    <a href="Libros.html" style="color: black;"><img  src="navidad.jpg" alt="xmas"></a>
-    <font size="5" align="center"> EVENTO NAVIDAD</font>
-    <a href="poemas.html" style="color: black;"><img  src="poema.jpg" alt="poema" sizes="5"></a>
-    <font size="5" align="center"> POEMAS SECU </font>
-    <a href="libros.html" style="color: black;"><img  src="tips.png" alt="libros"></a>
-    <font size="5" align="center"> TIPS ESTUDIO </font>
-    <a href="libros.html" style="color: black;"><img  src="inte.jpg" alt="xmas"></a>
-    <font size="5" align="center">  ACERTIJOS </font>
-    <a href="reportaje.html" style="color: black;"><img  src="repor.jpg" alt="reportaje" sizes="5"></a>
-    <font size="5" align="center">REPORTAJE SEMANAL</font>
-</div>
+<div class="galeria">
+        <div class="objeto"><a href="libros.html" style="color: black;"><img  src="libros.jpg" alt="libros"></a>
+        <font size="5" align="center"> TERTURIA LITERARIA</font></div>
+        <div class="objeto"><a href="Libros.html" style="color: black;"><img  src="navidad.jpg" alt="xmas"></a>
+        <font size="5" align="center"> EVENTO NAVIDAD</font></div>
+        <div class="objeto"><a href="poemas.html" style="color: black;"><img  src="poema.jpg" alt="poema" sizes="5"></a>
+        <font size="5" align="center"> POEMAS SECU </font></div>
+        <div class="objeto"><a href="libros.html" style="color: black;"><img  src="tips.png" alt="libros"></a>
+        <font size="5" align="center"> TIPS ESTUDIO </font></div>
+        <div class="objeto"><a href="libros.html" style="color: black;"><img  src="inte.jpg" alt="xmas"></a>
+        <font size="5" align="center">  ACERTIJOS </font></div>
+        <div class="objeto"><a href="reportaje.html" style="color: black;"><img  src="repor.jpg" alt="reportaje" sizes="5"></a>
+        <font size="5" align="center">REPORTAJE SEMANAL</font></div>
+    </div>
     <!--Separe la imagen de la tabla usando un div-->
 </body>
 </html>
