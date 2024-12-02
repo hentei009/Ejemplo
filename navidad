@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="snow.css">
+        <link rel="stylesheet" href="body.css">
+        <title>Vida de Lobo</title>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <div class="izq">
+                    <img src="vidadelobo.png" alt="Logotipo">
+                </div>
+                <h1>Vida de Lobo 3°A</h1>
+            </header>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">INICIO</a>
+                    </li>
+                    <li>
+                        <a href="#">ARTICULOS</a>
+                    </li>
+                    <li>
+                        <a href="#">ORIGEN</a>
+                    </li>
+                    <li>
+                        <a href="#">COMPRA</a>
+                    </li>
+                    <li>
+                        <a href="#">COMUNIDAD</a>
+                    </li>
+                    <li>
+                        <a href="#">CRÉDITOS</a>
+                    </li>
+                </ul>
+            </nav>
+        <div id="snow"></div> <script src="snow.js"></script>
+        <p>Página para Navidad</p>
+    </div>
+    <footer>
+        nicolas 3ro a
+    </footer>
+    </body>
+</html>
